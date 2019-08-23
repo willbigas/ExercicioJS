@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Cadastro de Pessoas</title>
+</head>
+<body>
+
+    <div class="container">
+        
+        <label for="nome">Nome: </label>
+        <input id="nome" type="text" placeholder="Informe seu nome" onblur="verificarNome()">
+
+        <label for="email">E-mail: </label>
+        <input id="email" type="text" placeholder="Informe seu e-mail" onblur="verificarEmail()">
+
+        <label for="nascimento">Nascimento:</label>
+        <input id="nascimento" type="date" placeholder="Informe sua data de nascimento" onblur="verificarNascimento()">
+
+        <button id="cadastrar" onclick="cadastrar()">Cadastrar</button>
+        <button id="limpar" onclick="limparFormulario()">Limpar</button>
+
+        <hr>
+
+        <table id="dados">
+            <thead>
+                <th>Nome</th>
+                <th>E-mail</th>
+                <th>Nascimento</th>
+                <th>Idade</th>
+            </thead>
+            <tbody>
+               
+            </tbody>
+        </table>
+
+    </div>
+    <script src="js/pessoa.js"></script>
+    <script src="js/app3.js"></script>
+</body>
+</html> 
